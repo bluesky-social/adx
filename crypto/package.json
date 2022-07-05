@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "dev": "tsc -w --project tsconfig.json",
-    "test": "ava -v test/*.ts",
+    "test": "jest",
     "lint": "eslint --ext .ts ."
   },
   "dependencies": {
@@ -19,7 +19,9 @@
     "uint8arrays": "^3.0.0"
   },
   "devDependencies": {
-    "ava": "^4.2.0",
+    "@types/jest": "^28.1.4",
+    "jest": "^28.1.2",
+    "ts-jest": "^28.0.5",
     "typescript": "^4.7.2"
   }
 }
