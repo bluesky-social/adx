@@ -23,6 +23,7 @@
   },
   "exclude": ["node_modules", "**/*/dist"],
   "references": [
+    { "path": "./packages/aic/tsconfig.build.json" },
     { "path": "./packages/api/tsconfig.build.json" },
     { "path": "./packages/auth/tsconfig.build.json" },
     { "path": "./packages/auth-lobby" },

@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist", // Your outDir,
+    "emitDeclarationOnly": true
+  },
+  "include": ["./src","__tests__/**/**.ts"],
+  "references": [
+    { "path": "../crypto/tsconfig.build.json" },
+    { "path": "../common/tsconfig.build.json" },
+    { "path": "../did-sdk/tsconfig.build.json" }
+  ]
+}

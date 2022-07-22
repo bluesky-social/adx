@@ -25,6 +25,7 @@ const run = async () => {
   }
 
   if (dbLoc) {
+    console.log('Database:', dbLoc)
     db = Database.sqlite(dbLoc)
   } else {
     db = Database.memory()

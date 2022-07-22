@@ -1,0 +1,32 @@
+{
+  "name": "@adxp/aic",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/index.js",
+    "test": "jest",
+    "prettier": "prettier --check src/",
+    "prettier:fix": "prettier --write src/",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "yarn lint --fix",
+    "verify": "run-p prettier lint",
+    "verify:fix": "yarn prettier:fix && yarn lint:fix",
+    "build": "node ./build.js",
+    "postbuild": "tsc --build tsconfig.build.json"
+  },
+  "dependencies": {
+    "@adxp/common": "*",
+    "@adxp/crypto": "*",
+    "uint8arrays": "^3.0.0",
+    "@vscode/sqlite3": "^5.0.7",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-async-errors": "^3.1.1",
+    "knex": "^1.0.4",
+    "zod": "^3.14.2"
+  },
+  "devDependencies": {
+    "axios": "^0.26.1"
+  }
+}
